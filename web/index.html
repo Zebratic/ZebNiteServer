@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Language" content="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Zebnite Server Control Panel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<meta name="description" content="This is an example dashboard created using build-in elements and components.">
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<link href="./main.css" rel="stylesheet">
+	<style type="text/css">
+		/* Chart.js */
+		@-webkit-keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		.chartjs-render-monitor {
+			-webkit-animation: chartjs-render-animation 0.001s;
+			animation: chartjs-render-animation 0.001s;
+		}
+	</style>
+	<style type="text/css">
+		/* Chart.js */
+		@-webkit-keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		.chartjs-render-monitor {
+			-webkit-animation: chartjs-render-animation 0.001s;
+			animation: chartjs-render-animation 0.001s;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="app-main">
+			<div class="app-main__outer">
+				<div class="app-main__inner">
+					<div class="app-page-title">
+						<div class="page-title-wrapper">
+							<div class="page-title-heading">
+							<img src="./bs.png" alt="Simply Easy Learning" width="120"
+									height="120">
+								<div class="page-title-icon">
+								</div>
+								<div>Zebnite Server Settings
+									<div class="page-title-subheading"></div>
+									<a href="https://discord.gg/mwT4wJT">Please join my discord server!</a>
+									<div>
+									<a href="https://www.youtube.com/watch?v=1tZ30du4I9I&t=">TUTORIAL VIDEO!</a>
+									<div class="page-title-subheading"> </div>
+									<div class="mb-2 mr-2 badge badge-danger">Created by Zebratic#7297</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane tabs-animation fade active show" id="tab-content-1" role="tabpanel">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="main-card mb-3 card">
+									<div class="card-body">
+										<h5 class="card-title">GENERAL ZEBNITE SETTINGS</h5>
+										<div>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">ADD ITEM</span></div>
+												<input id="item" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme11()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">ANNOUNCEMENT</span></div>
+												<input id="announcement" placeholder="Message" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme1()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">Custom Announcement Message, visible for everyone on the server!</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">NAME</span></div>
+												<input id="name" placeholder="Name Inside the game" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What name would you like to have ingame?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">SEASON</span></div>
+												<input id="season" placeholder="Season" type="number" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme4()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What season do you want the server to run?</div>
+											<br>
+											</div>
+												<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">VBUCKS</span></div>
+												<input id="vbx" placeholder="Amount" type="number" class="form-control">
+												<div class="input-group-append">
+													<button onclick="vbx()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">How many VBucks do you want?</div>
+										</div>
+									</div>
+								</div>
+								<div class="main-card mb-3 card">
+									<div class="card-body">
+										<h5 class="card-title">SEND GIFT</h5>
+										<div>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">ITEM</span></div>
+												<input id="giftitem" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="gift1()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want send?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">FROM</span></div>
+												<input id="giftname" placeholder="Gift From" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="gift2()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What name should the gift be from?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">BOX</span></div>
+												<input id="giftbox" placeholder="GiftBoxID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="gift3()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What box do you want to send the item in?</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="main-card mb-3 card">
+									<div class="card-body">
+										<h5 class="card-title">ITEM SHOP</h5>
+										<div>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">FEATURED 1</span></div>
+												<input id="featured1" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme2()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Featured in Item Shop at slot 1?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">FEATURED 2</span></div>
+												<input id="featured2" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme3()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Featured in Item Shop at slot 2?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 1</span></div>
+												<input id="daily1" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme5()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 1?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 2</span></div>
+												<input id="daily2" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme6()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 2?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 3</span></div>
+												<input id="daily3" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme7()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 3?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 4</span></div>
+												<input id="daily4" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme8()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 4?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 5</span></div>
+												<input id="daily5" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme9()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 5?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 6</span></div>
+												<input id="daily6" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme10()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 6?</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="main-card mb-3 card">
+									<div class="card-body">
+										<h5 class="card-title">ITEM SHOP</h5>
+										<div>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">COMMAND</span></div>
+												<input id="featured1" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme2()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Featured in Item Shop at slot 1?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">FEATURED 2</span></div>
+												<input id="featured2" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme3()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Featured in Item Shop at slot 2?</div>
+											<br>
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text">DAILY 1</span></div>
+												<input id="daily1" placeholder="Type: CID" type="text" class="form-control">
+												<div class="input-group-append">
+													<button onclick="clickme5()" class="btn btn-secondary">Save</button>
+												</div>
+											</div>
+											<div class="page-title">What item do you want to be Daily in Item Shop at slot 1?</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript" src="./assets/scripts/main.js"></script>
+				<script type="text/javascript" src="./assets/scripts/ipc.js"></script>
+
+				<div class="jvectormap-tip"></div>
+</body>
+
+</html>
